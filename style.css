@@ -1,0 +1,71 @@
+body {
+    font-family: sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    font-family: serif; /* Fuente distinta para los encabezados */
+    background-color: #f0f0f0; /* Un color de fondo sutil para destacar */
+}
+
+#addMovieForm div {
+    margin-bottom: 10px;
+}
+
+#addMovieForm label {
+    display: block; /* Etiquetas en líneas separadas */
+    margin-bottom: 5px;
+}
+
+#addMovieForm input[type="text"],
+#addMovieForm input[type="number"],
+#addMovieForm select {
+    width: 100%; /* Campos ocupan todo el ancho disponible */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Incluir padding y border en el ancho */
+    margin-bottom: 10px;
+}
+
+#addMovieBtn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#addMovieBtn:hover {
+    background-color: #0056b3;
+}
+
+.atp-hover {
+    background-color: lightgreen;
+}
+
+.plus13-hover {
+    background-color: lightblue;
+}
+
+.plus16-hover {
+    background-color: orange;
+}
+
+.plus18-hover {
+    background-color: red;
+    color: white; /* Texto blanco para mejor contraste */
+}
+
