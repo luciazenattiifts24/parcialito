@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartelera de Cine</title>
+    <link rel="shortcut icon" href="./img/ifts24.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cartelera de Cine</h1>
+    </header>
+
+    <main>
+        <section id="displayMovies">
+            <h2>Películas en Cartelera</h2>
+            <figure>
+                <table id="movieTable">
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Género</th>
+                            <th>Año</th>
+                            <th>Clasificación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        </tbody>
+                </table>
+                <figcaption>Lista de películas actualmente en cartelera.</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <section id="addMovieSection">
+            <h2>Agregar Nueva Película</h2>
+            <form id="addMovieForm">
+                <div>
+                    <label for="title">Título: </label>
+                    <input type="text" id="title" name="title" placeholder="Ej: Avengers: Endgame" required>
+                </div>
+                <div>
+                    <label for="genre">Género: </label>
+                    <select id="genre" name="genre" required>
+                        <option value="" disabled selected>Seleccionar género</option>
+                        <option value="Acción">Acción</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Comedia">Comedia</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="year">Año: </label>
+                    <input type="number" id="year" name="year" min="1900" placeholder="Ej: 2019" required>
+                </div>
+                <div>
+                    <label for="classification">Clasificación: </label>
+                    <select id="classification" name="classification" required>
+                        <option value="" disabled selected>Seleccionar clasificación</option>
+                        <option value="ATP">ATP</option>
+                        <option value="+13">+13</option>
+                        <option value="+16">+16</option>
+                        <option value="+18">+18</option>
+                    </select>
+                </div>
+                <button type="button" id="addMovieBtn">Agregar película</button>
+                <p id="warningMessage" style="color: red; display: none;">Por favor, completa todos los campos correctamente.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><small>&copy; 2025 Cartelera de Cine - Todos los derechos reservados.</small></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
